@@ -1,0 +1,83 @@
+html,
+header,
+body,
+#me{
+	height: 100%;
+}
+
+#me{
+background: url("sky.jpg")no-repeat center center fixed;
+-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.view {
+  position: relative;
+  overflow: hidden;
+  cursor: default; }
+  .view .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed; }
+  .view img, .view video {
+    position: relative;
+    display: block; }
+  .view video.video-intro {
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: 1s opacity;
+    -o-transition: 1s opacity;
+    transition: 1s opacity;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto; }
+.rgba-black-strong,
+.rgba-black-strong:after {
+  background-color: rgba(0, 0, 0, 0.7); }
+.hr-light {
+  border-top: 1px solid #fff; }
+ .grey-text{
+ 	color: grey;
+ }
+ .orange-text{
+ 	color: orange;
+ }
+
+ .bg-orange{
+background-color:#FF7F50;
+}
+.footer{
+    color: white;
+    border-top: 8px solid crimson;
+    background-color: #c91d61;
+    background: linear-gradient(20deg,blue,crimson,purple); /*Change colors as you want*/
+    background-size: 1000% 1000% !important;
+    -webkit-animation: changeColors 30s ease infinite;
+    -moz-animation: changeColors 30s ease infinite;
+    -o-animation: changeColors 30s ease infinite;
+    animation: changeColors 30s ease infinite;
+}
+
+@-webkit-keyframes changeColors {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
